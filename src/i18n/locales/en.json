@@ -1,0 +1,131 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "img_alt": "Professional cleaning service background",
+      "title_part1": "Book your",
+      "title_part2": "Professional",
+      "title_part3": "Cleaning",
+      "subtitle": "Simplify your daily life, we take care of the rest. Fast, reliable, and spotless service.",
+      "cta": "Book Now"
+    }
+  },
+  "services": {
+    "title": "Our Cleaning Services",
+    "subtitle": "Tailored solutions for every need.",
+    "cat_home": "House & Apartment",
+    "cat_office": "Office & Commercial",
+    "cat_vehicle": "Vehicle Cleaning",
+    "cat_special": "Specialized Cleaning"
+  },
+  "features": {
+    "title": "Why JadaClean?",
+    "f1_title": "Pro Quality",
+    "f1_text": "A trained team equipped with the best products for a spotless result.",
+    "f2_title": "Flexibility",
+    "f2_text": "We operate according to your schedule, 7 days a week for your comfort.",
+    "f3_title": "Trust",
+    "f3_text": "Insured services and 100% satisfaction guaranteed with every visit."
+  },
+  "process": {
+    "title": "How it works?",
+    "step1_title": "Book",
+    "step1_text": "Online or by phone in less than 2 minutes.",
+    "step2_title": "Intervention",
+    "step2_text": "We intervene on the agreed date with our professional equipment.",
+    "step3_title": "Result",
+    "step3_text": "Enjoy your own sparkling and healthy space."
+  },
+  "team": {
+  "title": "Our Team",
+  "subtitle": "The JadaClean experts",
+  "role_expert": "Cleaning Expert",
+  "role_supervisor": "Supervisor",
+  "role_glass": "Window Specialist",
+  "role_client": "Customer Service",
+  "role_agent": "Maintenance Agent"
+},
+"footer": {
+    "description": "High-precision cleaning experts for individuals and businesses. JadaClean transforms your spaces with excellence.",
+    "links_title": "Navigation",
+    "contact_title": "Contact Us",
+    "newsletter_title": "Newsletter",
+    "newsletter_btn": "Subscribe",
+    "rights": "All rights reserved.",
+    "booking_cta": "Book Now",
+    "designed_by": "Designed by"
+  },
+  "about": {
+    "title": "Professional Cleaning Excellence",
+    "subtitle": "Cleaning excellence at your service",
+    "description": "JadaClean Enterprise S.R.L., based in Afumați, redefines cleaning standards in Romania. Our mission is to improve workplace productivity and home comfort through impeccable environments.",
+    "stats": {
+      "satisfaction": "Satisfaction",
+      "eco": "Eco Products",
+      "support": "24/7 Support",
+      "trust": "Verified Staff",
+      "recognition": "Top 100 Romania Certified"
+    },
+    "tech": {
+      "title": "Technology & Ecology",
+      "content": "We use only the best for your health. Our Kärcher and Ghibli equipment with HEPA filtration eliminates allergens while protecting the environment.",
+      "karcher": "Kärcher & Ghibli Professional Equipment",
+      "hepa": "Certified HEPA Filtration Systems",
+      "eco": "Eco-friendly cleaning solutions"
+    },
+    "safety": {
+      "title": "Safety & Transparency",
+      "content": "Every member of our team is rigorously trained and has a clean criminal record. We operate with full liability insurance for your peace of mind.",
+      "insurance": "Civil Liability Insurance Included"
+    },
+    "services_detail": {
+      "title": "Total Flexibility",
+      "content": "From studios to villas, or corporate headquarters, we adapt our schedules and methods to your specific needs.",
+      "res": "Residential Cleaning",
+      "com": "Commercial & Offices"
+    },
+    "award": {
+      "title": "Recognized Growth",
+      "content": "Recognized in the 'Top 100 Cleaning Companies in Romania', JadaClean stands out for its rigor and consistent quality."
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "getInTouch": "Get in touch",
+    "info": "Contact Info",
+    "name": "Full Name",
+    "email": "Email",
+    "message": "Your message",
+    "send": "Send Message",
+    "success": "Message sent successfully!"
+  },
+  "success": {
+  "title": "It's done, {{name}}!",
+  "description": "Your booking for the service <1>{{service}}</1> has been successfully validated.",
+  "contact": "A JadaClean agent will contact you shortly.",
+  "noteTitle": "Note",
+  "noteText": "A payment receipt has been sent to your email address. Keep it safe for your appointment.",
+  "button": "Return to site",
+  "defaultName": "Valued Customer",
+  "defaultService": "your service"
+},
+"payment": {
+  "info_title": "Your Information",
+  "info_subtitle": "To organize your service",
+  "fullname": "Full Name",
+  "phone": "Phone Number",
+  "address": "Full intervention address",
+  "continue": "Continue to payment",
+  "pay_title": "Pay {{amount}} Lei",
+  "method_card": "Card",
+  "method_paypal": "PayPal",
+  "proceed": "Proceed to payment",
+  "back": "← Edit my information",
+  "error_redirect": "Redirection error."
+}
+}

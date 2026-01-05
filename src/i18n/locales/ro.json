@@ -1,0 +1,128 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "about": "Despre noi",
+    "contact": "Contact"
+  },
+  "home": {
+    "hero": {
+      "img_alt": "Servicii de curățenie profesională",
+      "title_part1": "Rezervă",
+      "title_part2": "Curățenia",
+      "title_part3": "Profesională",
+      "subtitle": "Simplifică-ți viața de zi cu zi, noi ne ocupăm de restul. Servicii rapide, de încredere și impecabile.",
+      "cta": "Rezervă Acum"
+    }
+  },
+  "services": {
+    "title": "Serviciile Noastre",
+    "subtitle": "Soluții personalizate pentru fiecare nevoie.",
+    "cat_home": "Casă și Apartament",
+    "cat_office": "Birouri și Comerciale",
+    "cat_vehicle": "Curățare Vehicule",
+    "cat_special": "Curățenie Specializată"
+  },
+  "features": {
+    "title": "De ce JadaClean ?",
+    "f1_title": "Calitate Pro",
+    "f1_text": "O echipă instruită și echipată cu cele mai bune produse pentru un rezultat impecabil.",
+    "f2_title": "Flexibilitate",
+    "f2_text": "Intervenim în funcție de programul tău, 7 zile din 7 pentru confortul tău.",
+    "f3_title": "Încredere",
+    "f3_text": "Servicii asigurate și satisfacție garantată 100% la fiecare vizită."
+  },
+  "process": {
+    "title": "Cum funcționează?",
+    "step1_title": "Rezervă",
+    "step1_text": "Online sau prin telefon în mai puțin de 2 minute.",
+    "step2_title": "Intervenție",
+    "step2_text": "Intervenim la data stabilită cu echipamentul nostru profesional.",
+    "step3_title": "Rezultat",
+    "step3_text": "Bucurați-vă de propriul spațiu strălucitor și sănătos."
+  },
+  "team": {
+  "title": "Echipa Noastră",
+  "subtitle": "Experții JadaClean",
+  "role_expert": "Expert Curățenie",
+  "role_supervisor": "Supervizor",
+  "role_glass": "Specialist Geamuri",
+  "role_client": "Serviciu Clienți",
+  "role_agent": "Agent Întreținere"
+},
+"footer": {
+    "description": "Experți în curățenie de înaltă precizie pentru persoane fizice și companii. JadaClean transformă spațiile dumneavoastră cu excelență.",
+    "links_title": "Navigație",
+    "contact_title": "Contactați-ne",
+    "newsletter_title": "Newsletter",
+    "newsletter_btn": "Abonează-te",
+    "rights": "Toate drepturile rezervate.",
+    "booking_cta": "Rezervă acum",
+    "designed_by": "Creat de"
+  },
+  "about": {
+    "title": "Excelență în Curățenie Profesională",
+    "subtitle": "Excelența curățeniei la serviciul dumneavoastră",
+    "description": "JadaClean Enterprise S.R.L., cu sediul în Afumați, redefinește standardele de curățenie în România. Misiunea noastră este de a îmbunătăți productivitatea la locul de muncă și confortul acasă prin medii impecabile.",
+    "stats": {
+      "satisfaction": "Satisfacție",
+      "eco": "Produse Eco",
+      "support": "Suport 24/7",
+      "trust": "Personal Verificat",
+      "recognition": "Certificat Top 100 România"
+    },
+    "tech": {
+      "title": "Tehnologie și Ecologie",
+      "content": "Folosim doar ce este mai bun pentru sănătatea dumneavoastră. Echipamentele noastre Kärcher și Ghibli cu filtrare HEPA elimină alergenii protejând în același timp mediul înconjurător.",
+      "karcher": "Echipamente profesionale Kärcher și Ghibli",
+      "hepa": "Sisteme de filtrare HEPA certificate",
+      "eco": "Soluții de curățare eco-responsabile"
+    },
+    "safety": {
+      "title": "Siguranță și Transparență",
+      "content": "Fiecare membru al echipei noastre este instruit riguros și are cazier judiciar curat. Operăm cu asigurare de răspundere civilă completă pentru liniștea dumneavoastră.",
+      "insurance": "Asigurare de răspundere civilă inclusă"
+    },
+    "services_detail": {
+      "title": "Flexibilitate Totală",
+      "content": "De la garsoniere la vile, sau sedii sociale, ne adaptăm programul și metodele nevoilor dumneavoastră specifice.",
+      "res": "Curățenie Rezidențială",
+      "com": "Comercial și Birouri"
+    },
+    "award": {
+      "title": "O Creștere Recunoscută",
+      "content": "Recunoscută în 'Top 100 companii de curățenie din România', JadaClean se impune prin rigoare și calitate constantă."
+    }
+  },
+  "contact": {
+    "title": "Contactați-ne",
+    "getInTouch": "Ia legătura",
+    "info": "Informații",
+    "name": "Nume complet",
+    "email": "Email",
+    "message": "Mesajul tău",
+    "send": "Trimite mesajul",
+    "success": "Mesaj trimis cu succes!"
+  },
+  "success": {
+  "title": "Gata, {{name}} !",
+  "description": "Rezervarea dumneavoastră pentru serviciul <1>{{service}}</1> a fost confirmată cu succes.",
+  "contact": "Un agent JadaClean vă va contacta în curând.",
+  "note": "O chitanță de plată a fost trimisă pe adresa dumneavoastră de e-mail. Păstrați-o pentru programare.",
+  "button": "Înapoi la site"
+},
+"payment": {
+  "info_title": "Informațiile dvs.",
+  "info_subtitle": "Pentru a organiza intervenția noastră",
+  "fullname": "Nume complet",
+  "phone": "Număr de telefon",
+  "address": "Adresa completă a intervenției",
+  "continue": "Continuați la plată",
+  "pay_title": "Plătește {{amount}} Lei",
+  "method_card": "Card",
+  "method_paypal": "PayPal",
+  "proceed": "Continuați cu plata",
+  "back": "← Modifică informațiile mele",
+  "error_redirect": "Eroare la redirecționare."
+}
+}
