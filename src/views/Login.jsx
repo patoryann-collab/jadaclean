@@ -39,7 +39,7 @@ export default function Login() {
         <div className="flex flex-col items-center justify-center min-h-[70vh] px-6">
             <div className="bg-white p-10 rounded-[2.5rem] shadow-2xl w-full max-w-md border border-gray-100">
                 <h2 className="text-3xl font-black mb-8 uppercase italic tracking-tighter text-[#001f3f] text-center">
-                    {isSignUp ? 'Créer un' : 'Espace'} <span className="text-yellow-500">{isSignUp ? 'Compte' : 'Client'}</span>
+                    {isSignUp ? 'Créer un' : 'Space'} <span className="text-yellow-500">{isSignUp ? 'Compte' : 'Admin'}</span>
                 </h2>
 
                 <form onSubmit={handleAuth} className="space-y-6">
@@ -55,7 +55,7 @@ export default function Login() {
                     />
 
                     <button type="submit" disabled={loading} className="w-full py-5 bg-[#001f3f] text-white rounded-[1.5rem] font-black uppercase tracking-widest hover:bg-yellow-500 transition-all shadow-lg">
-                        {loading ? 'Chargement...' : (isSignUp ? "S'inscrire" : "Se connecter")}
+                        {loading ? 'Chargement...' : (isSignUp ? "S'inscrire" : "Connexion")}
                     </button>
                 </form>
 

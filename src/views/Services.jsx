@@ -78,7 +78,14 @@ export default function Services() {
                     {/* GRILLE DES SERVICES */}
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <AnimatePresence mode="popLayout">
-                            {filteredServices.map((service) => (
+                            {filteredServices.map((service) => {
+                                // Trouver la catégorie pour l'étiquette
+                                const cat = categories.find(c => c.id === service.category_id);
+                                const catLabel = cat?.name_i18n?.[i18n.language] || cat?.name_i18n?.ro;
+                                const serviceTitle = service.title?.[i18n.language] || service.title?.ro || service.title?.fr;
+
+                                return (
+                                
                                 <motion.div 
                                     layout 
                                     initial={{ opacity: 0, scale: 0.9 }} 
@@ -89,6 +96,11 @@ export default function Services() {
                                 >
                                     {/* Image et Bouton Réserver au survol */}
                                     <div className="relative h-64 overflow-hidden">
+                                        {catLabel && (
+                                                <div className="absolute top-4 left-4 z-10 bg-white/90 backdrop-blur-sm text-[#001f3f] px-4 py-1.5 rounded-full text-[9px] font-black uppercase tracking-widest shadow-sm">
+                                                    {catLabel}
+                                                </div>
+                                            )}
                                         <img 
                                             src={service.image_url} 
                                             alt="service"
@@ -119,7 +131,8 @@ export default function Services() {
                                         </div>
                                     </div>
                                 </motion.div>
-                            ))}
+                                );
+                            })}
                         </AnimatePresence>
                     </div>
                 </div>
