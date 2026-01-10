@@ -104,6 +104,7 @@ export default function Home() {
               <motion.div style={{ scaleX }} className="h-2 w-48 bg-yellow-400 rounded-full origin-left" />
             </div>
           </div>
+          <Link to="/services">
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 relative">
             {/* Ligne Desktop */}
@@ -138,6 +139,7 @@ export default function Home() {
               </motion.div>
             ))}
           </div>
+          </Link>
         </div>
       </section>
 
