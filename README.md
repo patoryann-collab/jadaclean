@@ -79,3 +79,6 @@ Optimisation des images : Utilisation d'URLs Cloud pour un chargement rapide.
 [ ] Système de facturation automatique en PDF.
 
 [ ] Géolocalisation via Google Maps API pour valider les adresses.
+
+Bleu Nuit	#001f3f
+Jaune Or	#eab308

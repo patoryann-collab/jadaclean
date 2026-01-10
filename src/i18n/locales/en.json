@@ -13,15 +13,24 @@
       "title_part3": "Cleaning",
       "subtitle": "Simplify your daily life, we take care of the rest. Fast, reliable, and spotless service.",
       "cta": "Book Now"
+    },
+    "slider": {
+      "quality_title": "Premium Quality",
+      "quality_subtitle": "Professional equipment for impeccable results.",
+      "team_title": "Trusted Team",
+      "team_subtitle": "Trained and vetted staff for your safety.",
+      "eco_title": "Eco-Friendly Solutions",
+      "eco_subtitle": "Protecting the environment and your family's health."
     }
   },
+ 
   "services": {
     "title": "Our Cleaning Services",
     "subtitle": "Tailored solutions for every need.",
     "cat_home": "House & Apartment",
-    "cat_office": "Office & Commercial",
-    "cat_vehicle": "Vehicle Cleaning",
-    "cat_special": "Specialized Cleaning"
+    "cat_office": "Mattress & Bedding",
+    "cat_vehicle": "Kitchen & Appliances",
+    "cat_special": "Sofa & Carpet"
   },
   "features": {
     "title": "Why JadaClean?",

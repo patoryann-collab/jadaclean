@@ -13,15 +13,24 @@
       "title_part3": "Profesională",
       "subtitle": "Simplifică-ți viața de zi cu zi, noi ne ocupăm de restul. Servicii rapide, de încredere și impecabile.",
       "cta": "Rezervă Acum"
-    }
+    },
+    "slider": {
+    "quality_title": "Calitate Premium",
+    "quality_subtitle": "Echipamente profesionale pentru rezultate impecabile.",
+    "team_title": "Echipă de Încredere",
+    "team_subtitle": "Personal instruit și verificat pentru siguranța dumneavoastră.",
+    "eco_title": "Soluții Eco-Friendly",
+    "eco_subtitle": "Protejăm mediul și sănătatea familiei dumneavoastră."
+  }
   },
+
   "services": {
     "title": "Serviciile Noastre",
     "subtitle": "Soluții personalizate pentru fiecare nevoie.",
     "cat_home": "Casă și Apartament",
-    "cat_office": "Birouri și Comerciale",
-    "cat_vehicle": "Curățare Vehicule",
-    "cat_special": "Curățenie Specializată"
+    "cat_office": "Saltea și Lenjerie",
+    "cat_vehicle": "Bucătărie și Electrocasnice",
+    "cat_special": "Canapea și Covor"
   },
   "features": {
     "title": "De ce JadaClean ?",

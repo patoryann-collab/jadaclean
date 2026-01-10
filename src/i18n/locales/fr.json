@@ -13,15 +13,23 @@
       "title_part3": "Professionnel",
       "subtitle": "Simplifiez votre quotidien, nous nous occupons du reste. Un service rapide, fiable et impeccable.",
       "cta": "Réserver Maintenant"
+    },
+    "slider": {
+      "quality_title": "Qualité Premium",
+      "quality_subtitle": "Équipements professionnels pour des résultats impeccables.",
+      "team_title": "Équipe de Confiance",
+      "team_subtitle": "Personnel formé et vérifié pour votre sécurité.",
+      "eco_title": "Solutions Éco-Responsables",
+      "eco_subtitle": "Nous protégeons l'environnement et la santé de votre famille."
     }
   },
   "services": {
     "title": "Nos Services de Nettoyage",
     "subtitle": "Des solutions sur mesure pour chaque besoin.",
     "cat_home": "Maison & Appartement",
-    "cat_office": "Bureaux & Commerces",
-    "cat_vehicle": "Nettoyage Véhicule",
-    "cat_special": "Nettoyage Spécialisé"
+    "cat_office": "Matelas & Literie",
+    "cat_vehicle": "Cuisine & Electroménager",
+    "cat_special": "Canapé & Tapis"
   },
   "features": {
     "title": "Pourquoi JadaClean ?",

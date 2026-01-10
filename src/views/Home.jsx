@@ -1,13 +1,47 @@
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion';
+import { motion, useScroll, useTransform, useSpring, AnimatePresence } from 'framer-motion';
 import ServicesGrid from '../components/ServicesGrid';
 import Footer from '../components/Footer';
 import heroImage from '../assets/hero-bg.jfif';
 
 export default function Home() {
   const { t } = useTranslation();
+
+
+  const slides = [
+  {
+    id: 1,
+    title: t('home.slider.quality_title'),
+    subtitle: t('home.slider.quality_subtitle'),
+    image: "https://plus.unsplash.com/premium_photo-1679920025550-75324e59680f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW50cmV0aWVuJTIwbSVDMyVBOW5hZ2VyfGVufDB8fDB8fHww",
+    cta: t('home.hero.cta')
+  },
+  {
+    id: 2,
+    title: t('home.slider.team_title'),
+    subtitle: t('home.slider.team_subtitle'),
+    image: "https://media.istockphoto.com/id/2175710145/fr/photo/des-concierges-avec-des-outils-%C3%A0-la-main.webp?a=1&b=1&s=612x612&w=0&k=20&c=Rtqgy5WEmRZlz24qq8rHkUMbFjXmYLpQAbRG0y1VfsM=",
+    cta: t('home.hero.cta')
+  },
+  {
+    id: 3,
+    title: t('home.slider.eco_title'),
+    subtitle: t('home.slider.eco_subtitle'),
+    image: "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=1600&auto=format&fit=crop",
+    cta: t('home.hero.cta')
+  }
+];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
+    }, 5000); // Défilement toutes les 5 secondes
+    return () => clearInterval(timer);
+  }, [slides.length]);
 
   // REFS POUR LES ANIMATIONS DE SCROLL
   const processRef = useRef(null);
@@ -65,7 +99,71 @@ export default function Home() {
       {/* SECTION 2 : SERVICES */}
       <ServicesGrid />
 
-      {/* SECTION 3 : TEAM (STYLE PANORAMIQUE) */}
+
+      {/* SECTION 3 : NOUVEAU SLIDER DYNAMIQUE (REMOUVEAU TEAM) */}
+      <section className="py-24 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="relative h-[600px] rounded-[60px] overflow-hidden shadow-2xl">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentSlide}
+                initial={{ opacity: 0, x: 100 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -100 }}
+                transition={{ duration: 0.8, ease: "circOut" }}
+                className="absolute inset-0"
+              >
+                <img 
+                  src={slides[currentSlide].image} 
+                  className="w-full h-full object-cover" 
+                  alt="Slide" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#001f3f] via-[#001f3f]/40 to-transparent"></div>
+                
+                <div className="absolute inset-0 flex flex-col justify-center px-12 md:px-24">
+                  <motion.h2 
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.3 }}
+                    className="text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter mb-4"
+                  >
+                    {slides[currentSlide].title}
+                  </motion.h2>
+                  <motion.p 
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.5 }}
+                    className="text-white/80 text-xl max-w-lg mb-10 font-medium"
+                  >
+                    {slides[currentSlide].subtitle}
+                  </motion.p>
+                  <motion.div
+                    initial={{ y: 20, opacity: 0 }}
+                    animate={{ y: 0, opacity: 1 }}
+                    transition={{ delay: 0.7 }}
+                  >
+                    <Link to="/services" className="bg-yellow-400 text-[#001f3f] px-10 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl inline-block">
+                      {slides[currentSlide].cta}
+                    </Link>
+                  </motion.div>
+                </div>
+              </motion.div>
+            </AnimatePresence>
+            
+            {/* Indicateurs de slides */}
+            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex gap-3">
+              {slides.map((_, index) => (
+                <div 
+                  key={index}
+                  className={`h-2 rounded-full transition-all duration-500 ${index === currentSlide ? 'w-12 bg-yellow-400' : 'w-2 bg-white/50'}`}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* SECTION 3 : TEAM (STYLE PANORAMIQUE) 
       <section className="relative py-32 overflow-hidden bg-white">
         <div className="text-center mb-20 px-6">
           <h2 className="text-4xl md:text-6xl font-black text-[#001f3f] uppercase italic">{t('team.title')}</h2>
@@ -91,7 +189,8 @@ export default function Home() {
             ))}
           </motion.div>
         </div>
-      </section>
+      </section>   
+      */}
 
       {/* SECTION 4 : COMMENT ÇA MARCHE ? (RÉTABLIE ET CORRIGÉE) */}
       <section ref={processRef} className="relative py-32 bg-gray-50 overflow-hidden">

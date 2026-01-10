@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 export default function ServicesGrid() {
     const { t } = useTranslation();
@@ -14,19 +15,19 @@ export default function ServicesGrid() {
         {
             id: 2,
             title: t('services.cat_office'),
-            image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1000&auto=format&fit=crop",
+            image: "https://plus.unsplash.com/premium_photo-1678297270523-8775c817d0b3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWF0ZWxhc3xlbnwwfHwwfHx8MA%3D%3D",
             delay: 0.5
         },
         {
             id: 3,
             title: t('services.cat_vehicle'),
-            image: "https://images.unsplash.com/photo-1520340356584-f9917d1eea6f?q=80&w=1000&auto=format&fit=crop",
+            image: "https://images.unsplash.com/photo-1588854337221-4cf9fa96059c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGN1aXNpbmV8ZW58MHx8MHx8fDA%3D",
             delay: 0.2
         },
         {
             id: 4,
             title: t('services.cat_special'),
-            image: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=1000&auto=format&fit=crop",
+            image: "https://media.istockphoto.com/id/1007084506/fr/photo/coussins-jaunes-et-couverture-sur-gris-canap%C3%A9-de-salon-moderne-int%C3%A9rieur-avec-des-plantes-et.webp?a=1&b=1&s=612x612&w=0&k=20&c=_scfVKVMuXpbeJYSPEy0sqUdtSy_Csy_omGhhfdSVnE=",
             delay: 0.7
         },
     ];
@@ -40,8 +41,10 @@ export default function ServicesGrid() {
                 <p className="text-gray-500 mt-4 text-lg">{t('services.subtitle')}</p>
             </div>
 
+            <Link to="/services">
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 items-center">
                 {categories.map((cat, index) => (
+                    
                     <motion.div
                         key={cat.id}
                         // EFFET GRAVITY FLOATING
@@ -64,6 +67,7 @@ export default function ServicesGrid() {
                         }}
                         className="group relative h-96 overflow-hidden rounded-[40px] shadow-xl cursor-pointer bg-[#001f3f]"
                     >
+                           
                         <img
                             src={cat.image}
                             alt={cat.title}
@@ -81,6 +85,8 @@ export default function ServicesGrid() {
                     </motion.div>
                 ))}
             </div>
+            </Link>
+            
         </section>
     );
 }
