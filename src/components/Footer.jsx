@@ -83,7 +83,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 uppercase font-bold">Email</p>
-                                    <p className="font-medium">jadaentreprise3@gmail.com</p>
+                                    <p className="font-medium">contact@jadaclean.net</p>
                                 </div>
                             </div>
                         </div>
