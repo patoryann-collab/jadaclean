@@ -29,7 +29,8 @@
     "cat_home": "Maison & Appartement",
     "cat_office": "Matelas & Literie",
     "cat_vehicle": "Cuisine & Electroménager",
-    "cat_special": "Canapé & Tapis"
+    "cat_special": "Canapé & Tapis",
+    "cat_others": "Autres Services"
   },
   "features": {
     "title": "Pourquoi JadaClean ?",

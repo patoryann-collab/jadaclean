@@ -30,7 +30,8 @@
     "cat_home": "Casă și Apartament",
     "cat_office": "Saltea și Lenjerie",
     "cat_vehicle": "Bucătărie și Electrocasnice",
-    "cat_special": "Canapea și Covor"
+    "cat_special": "Canapea și Covor",
+    "cat_others": "Alte Servicii"
   },
   "features": {
     "title": "De ce JadaClean ?",

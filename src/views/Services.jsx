@@ -106,12 +106,7 @@ export default function Services() {
                                             alt="service"
                                             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" 
                                         />
-                                        <button
-                                            onClick={() => handleBookingClick(service)}
-                                            className="absolute bottom-4 right-4 bg-yellow-500 text-[#001f3f] px-6 py-3 rounded-2xl font-black uppercase text-[10px] tracking-widest shadow-xl flex items-center gap-2 hover:bg-[#001f3f] hover:text-white transition-all scale-0 group-hover:scale-100"
-                                        >
-                                            <ShoppingCartIcon sx={{ fontSize: 16 }} /> {t('footer.booking_cta', 'Réserver')}
-                                        </button>
+                                        
                                     </div>
 
                                     {/* Infos du Service */}
@@ -123,11 +118,13 @@ export default function Services() {
                                             <p className="text-lg font-black text-[#001f3f] tracking-tighter">
                                                 {service.price} {i18n.language === 'ro' ? 'Lei' : '€'}
                                             </p>
-                                            <div className="flex gap-1">
-                                                {[...Array(5)].map((_, i) => (
-                                                    <StarIcon key={i} className="text-yellow-400" sx={{ fontSize: 12 }} />
-                                                ))}
-                                            </div>
+                                            <button 
+                                                onClick={() => handleBookingClick(service)}
+                                                className="px-6 py-4 bg-[#001f3f] text-white rounded-2xl font-black uppercase italic tracking-widest text-[10px] hover:bg-yellow-500 hover:text-[#001f3f] transition-all shadow-lg flex items-center gap-2 group"
+                                            >
+                                                <ShoppingCartIcon fontSize="small" className="text-yellow-400 group-hover:text-[#001f3f] transition-colors" />
+                                                {t('home.hero.cta')}
+                                            </button>
                                         </div>
                                     </div>
                                 </motion.div>

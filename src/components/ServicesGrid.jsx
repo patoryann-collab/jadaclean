@@ -30,6 +30,7 @@ export default function ServicesGrid() {
             image: "https://media.istockphoto.com/id/1007084506/fr/photo/coussins-jaunes-et-couverture-sur-gris-canap%C3%A9-de-salon-moderne-int%C3%A9rieur-avec-des-plantes-et.webp?a=1&b=1&s=612x612&w=0&k=20&c=_scfVKVMuXpbeJYSPEy0sqUdtSy_Csy_omGhhfdSVnE=",
             delay: 0.7
         },
+        
     ];
 
     return (

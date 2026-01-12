@@ -30,7 +30,8 @@
     "cat_home": "House & Apartment",
     "cat_office": "Mattress & Bedding",
     "cat_vehicle": "Kitchen & Appliances",
-    "cat_special": "Sofa & Carpet"
+    "cat_special": "Sofa & Carpet",
+    "cat_others": "Other Services"
   },
   "features": {
     "title": "Why JadaClean?",

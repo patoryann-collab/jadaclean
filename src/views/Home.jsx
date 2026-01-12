@@ -39,7 +39,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
-    }, 5000); // Défilement toutes les 5 secondes
+    }, 7000); // Défilement toutes les 5 secondes
     return () => clearInterval(timer);
   }, [slides.length]);
 

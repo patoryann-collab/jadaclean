@@ -6,7 +6,7 @@ export default function About() {
     const { t } = useTranslation();
 
     const images = {
-        hero: "https://plus.unsplash.com/premium_photo-1667520405114-47d3677f966e?q=80&w=870&auto=format&fit=crop",
+        hero: "https://media.istockphoto.com/id/2205728079/fr/photo/plan-de-travail-de-cuisine.webp?a=1&b=1&s=612x612&w=0&k=20&c=1WevKm4fdfo_duLuQJDwn13cp8wbdZhKUSMGDng9i3Y=",
         equipment: "https://images.unsplash.com/photo-1765970101654-337b573142fb?q=80&w=870&auto=format&fit=crop",
         team: "https://images.unsplash.com/photo-1556911223-e1534ff6f922?q=80&w=2070&auto=format&fit=crop",
         office: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
