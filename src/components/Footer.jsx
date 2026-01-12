@@ -74,7 +74,7 @@ export default function Footer() {
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500 uppercase font-bold">Phone</p>
-                                    <p className="font-medium">+40 774 404 300</p>
+                                    <p className="font-medium">+40 733 857 478 / +40 (773) 348 791</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">
