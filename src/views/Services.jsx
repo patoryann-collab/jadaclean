@@ -116,7 +116,7 @@ export default function Services() {
                                         </h3>
                                         <div className="flex justify-between items-center">
                                             <p className="text-lg font-black text-[#001f3f] tracking-tighter">
-                                                {service.price} {i18n.language === 'ro' ? 'Lei' : '€'}
+                                                {service.price} {i18n.language === 'ro' ? 'Lei' : 'Lie'}
                                             </p>
                                             <button 
                                                 onClick={() => handleBookingClick(service)}
